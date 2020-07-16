@@ -2,5 +2,7 @@
 
 set -ue
 
+version=${FONT_VERSION:-$SEMAPHORE_GIT_SHA}
+
 mkdir -p build
-fontmake -u masters/pauley2-regular.ufo -o otf --output-path build/${FONT_NAME}-${GIT_HASH}.otf
+fontmake -u $UFO_PATH -o otf --output-path ${OUTPUT_PATH}/${FONT_NAME_STYLE}-${version}.otf
