@@ -1,0 +1,22 @@
+\begin[papersize=11in x 8.5in.,orientation=landscape,class=proof]{document}
+\nofolios
+\script[src=packages/linespacing]
+\script[src=packages/frametricks]
+
+\define[command=largecentered]{%
+\begin[parameter=shaper.tracking,value=1.1]{set}
+\begin[parameter=linespacing.fixed.baselinedistance,value=135pt]{set}
+\font[family=pauley3,size=135pt]{\center{\process}}
+\end{set}
+\end{set}
+}
+
+\header-right{\rightalign{Hello}}
+\header-left{Pauley3 Regular (Revision \env[name=PROOF_VERSION])} 
+  
+\vfill
+\largecentered{HODVER}
+\largecentered{nopvag}
+\vfill
+
+\end{document}
